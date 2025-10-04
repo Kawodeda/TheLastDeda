@@ -1,0 +1,62 @@
+
+# Config for Primal Winter Features
+[general]
+
+    # If true, snow will be layered higher than one layer during world generation.
+    # Note: due to snow layers being > 1 block tall, this tends to prevent most passive (and hostile) mob spawning on the surface, since there are no places to spawn.
+    enableSnowAccumulationDuringWorldgen = true
+
+    # 
+    minIceDepth = 2
+
+    # 
+    maxIceDepth = 4
+
+    plantsToReplace = ["minecraft:allium", "minecraft:azure_bluet", "minecraft:blue_orchid", "minecraft:cornflower", "minecraft:poppy", "minecraft:dandelion", "minecraft:lily_of_the_valley", "minecraft:oxeye_daisy", "minecraft:torchflower", "minecraft:orange_tulip", "minecraft:pink_tulip", "minecraft:red_tulip", "minecraft:white_tulip", "minecraft:lilac", "minecraft:peony", "minecraft:rose_bush", "minecraft:sunflower", "minecraft:wheat", "minecraft:beetroots", "minecraft:carrots", "minecraft:potatoes", "minecraft:melon_stem", "minecraft:pumpkin_stem", "minecraft:torchflower_crop", "minecraft:pitcher_crop", "minecraft:pitcher_plant", "minecraft:bamboo_sapling", "minecraft:cocoa", "minecraft:sugar_cane", "minecraft:sweet_berry_bush", "minecraft:brown_mushroom", "minecraft:red_mushroom", "minecraft:acacia_sapling", "minecraft:azalea", "minecraft:birch_sapling", "minecraft:cherry_sapling", "minecraft:dark_oak_sapling", "minecraft:flowering_azalea", "minecraft:jungle_sapling", "minecraft:mangrove_propagule", "minecraft:oak_sapling", "minecraft:spruce_sapling", "farm_and_charm:wild_barley", "farm_and_charm:wild_beetroots", "farm_and_charm:wild_carrots", "farm_and_charm:wild_corn", "farm_and_charm:wild_emmer", "farm_and_charm:wild_lettuce", "farm_and_charm:wild_nettle", "farm_and_charm:wild_oat", "farm_and_charm:wild_onions", "farm_and_charm:wild_potatoes", "farm_and_charm:wild_ribwort", "farm_and_charm:wild_strawberries", "farm_and_charm:wild_tomatoes", "farm_and_charm:barley_crop", "farm_and_charm:corn_crop", "farm_and_charm:lettuce_crop", "farm_and_charm:oat_crop", "farm_and_charm:onion_crop", "farm_and_charm:strawberry_crop", "farm_and_charm:tomato_crop", "farmersdelight:wild_beetroots", "farmersdelight:wild_cabbages", "farmersdelight:wild_carrots", "farmersdelight:wild_onions", "farmersdelight:wild_potatoes", "farmersdelight:wild_rice", "farmersdelight:wild_tomatoes", "farmersdelight:budding_tomatoes", "farmersdelight:cabbages", "farmersdelight:onions", "farmersdelight:rice_panicles", "regions_unexplored:alpha_dandelion", "regions_unexplored:alpha_rose", "regions_unexplored:aster", "regions_unexplored:black_snowbelle", "regions_unexplored:bleeding_heart", "regions_unexplored:blue_lupine", "regions_unexplored:blue_magnolia_flowers", "regions_unexplored:blue_snowbelle", "regions_unexplored:brown_snowbelle", "regions_unexplored:cyan_snowbelle", "regions_unexplored:daisy", "regions_unexplored:day_lily", "regions_unexplored:dorcel", "regions_unexplored:felicia_daisy", "regions_unexplored:fireweed", "regions_unexplored:flowering_leaves", "regions_unexplored:glistering_bloom", "regions_unexplored:gray_snowbelle", "regions_unexplored:green_snowbelle", "regions_unexplored:hibiscus", "regions_unexplored:hyacinth_flowers", "regions_unexplored:hyssop", "regions_unexplored:light_blue_snowbelle", "regions_unexplored:light_gray_snowbelle", "regions_unexplored:lime_snowbelle", "regions_unexplored:magenta_snowbelle", "regions_unexplored:mallow", "regions_unexplored:meadow_sage", "regions_unexplored:orange_coneflower", "regions_unexplored:orange_snowbelle", "regions_unexplored:pink_lupine", "regions_unexplored:pink_magnolia_flowers", "regions_unexplored:pink_snowbelle", "regions_unexplored:poppy_bush", "regions_unexplored:purple_coneflower", "regions_unexplored:purple_lupine", "regions_unexplored:purple_snowbelle", "regions_unexplored:red_lupine", "regions_unexplored:red_snowbelle", "regions_unexplored:salmon_poppy_bush", "regions_unexplored:tassel", "regions_unexplored:tsubaki", "regions_unexplored:waratah", "regions_unexplored:white_magnolia_flowers", "regions_unexplored:white_snowbelle", "regions_unexplored:wilting_trillium", "regions_unexplored:yellow_lupine", "regions_unexplored:pink_magnolia_flowers", "regions_unexplored:pink_snowbelle", "regions_unexplored:barley", "regions_unexplored:alpha_sapling", "regions_unexplored:apple_oak_sapling", "regions_unexplored:ashen_sapling", "regions_unexplored:bamboo_sapling", "regions_unexplored:baobab_sapling", "regions_unexplored:blackwood_sapling", "regions_unexplored:blue_magnolia_sapling", "regions_unexplored:brimwood_sapling", "regions_unexplored:cactus_flower", "regions_unexplored:cobalt_sapling", "regions_unexplored:cypress_sapling", "regions_unexplored:enchanted_birch_sapling", "regions_unexplored:eucalyptus_sapling", "regions_unexplored:flowering_sapling", "regions_unexplored:golden_larch_sapling", "regions_unexplored:joshua_sapling", "regions_unexplored:kapok_sapling", "regions_unexplored:larch_sapling", "regions_unexplored:magnolia_sapling", "regions_unexplored:maple_sapling", "regions_unexplored:mauve_sapling", "regions_unexplored:orange_maple_sapling", "regions_unexplored:palm_sapling", "regions_unexplored:pine_sapling", "regions_unexplored:pink_magnolia_sapling", "regions_unexplored:red_maple_sapling", "regions_unexplored:redwood_sapling", "regions_unexplored:silver_birch_sapling", "regions_unexplored:small_oak_sapling", "regions_unexplored:socotra_sapling", "regions_unexplored:white_magnolia_sapling", "regions_unexplored:willow_sapling", "herbalbrews:hibiscus", "herbalbrews:lavender", "herbalbrews:coffee_plant", "herbalbrews:rooibos_plant", "herbalbrews:tea_plant", "herbalbrews:yerba_mate_plant", "bakery:oat_crop", "bakery:strawberry_crop", "legendarysurvivaloverhaul:sun_fern_crop", "legendarysurvivaloverhaul:ice_fern_crop", "vinery:apple_tree_sapling", "vinery:dark_cherry_sapling"]
+
+    chanceToPreservePlant = 0.01
+
+    # A list of biome IDs that will not be forcibly converted to frozen wastelands. Any changes requires a MC restart to take effect.
+    nonWinterBiomes = [
+        "incendium:ash_barrens",
+        "minecraft:basalt_deltas",
+        "regions_unexplored:blackstone_basin",
+        "minecraft:crimson_forest",
+        "terrablender:deferred_placeholder",
+        "minecraft:end_barrens",
+        "minecraft:end_highlands",
+        "minecraft:end_midlands",
+        "regions_unexplored:glistering_meadow",
+        "incendium:infernal_dunes",
+        "regions_unexplored:infernal_holt",
+        "incendium:inverted_forest",
+        "creatingspace:mars_plains",
+        "creatingspace:moon_cave",
+        "creatingspace:moon_plains",
+        "regions_unexplored:mycotoxic_undergrowth",
+        "minecraft:nether_wastes",
+        "incendium:quartz_flats",
+        "regions_unexplored:redstone_abyss",
+        "minecraft:small_end_islands",
+        "minecraft:soul_sand_valley",
+        "creatingspace:space",
+        "minecraft:the_end",
+        "minecraft:the_void",
+        "incendium:toxic_heap",
+        "creatingspace:venus",
+        "creatingspace:venus_hellground",
+        "incendium:volcanic_deltas",
+        "minecraft:warped_forest",
+        "incendium:weeping_valley",
+        "incendium:withered_forest"
+    ]
+
+    # A list of dimension IDs that will not have winter weather effects set.
+    nonWinterDimensions = ["minecraft:the_nether", "minecraft:the_end"]
+
+    # If true, the 'nonWinterBiomes' config option will be interpreted as a list of winter biomes, and all others will be ignored.
+    invertNonWinterBiomes = false
+
+    # If true, the 'nonWinterDimensions' config option will be interpreted as a list of winter dimensions, and all others will be ignored.
+    invertNonWinterDimensions = false
+

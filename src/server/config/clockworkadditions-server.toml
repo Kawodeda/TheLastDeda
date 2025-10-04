@@ -1,0 +1,82 @@
+
+#.
+#Parameters and abilities of Clockwork Addons' kinetic mechanisms
+[kinetics]
+
+	[kinetics.cwastressValues]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.cwastressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.cwastressValues.v2.impact]
+				kinetic_flap_bearing = 4.0
+
+			#.
+			#[in Stress Units]
+			#Configure how much stress a source can accommodate for.
+			[kinetics.cwastressValues.v2.capacity]
+				handlebar = 8.0
+				mechanical_pedals = 10.0
+
+	#.
+	#Settings for the handlebar
+	[kinetics.handlebar]
+		#.
+		#.
+		#Maximum angle for the handlebar (might break idk)
+		#Range: 0.0 ~ 180.0
+		handleMaxAngle = 50.0
+		#.
+		#Speed for the handlebar (might break idk)
+		#Range: 0 ~ 256
+		handleSpeed = 16
+		#.
+		#Offset the seat hight for the mechanical pedals
+		#Range: -0.5 ~ 1.0
+		pedalsSeatHightOffset = 0.5
+
+#.
+#Changes and tweaks to Clockwork's blocks and items
+[clockwork]
+	#.
+	#.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	encasedFanForceMultiplier = 1.0
+
+#.
+#Parameters that change the way Clockwork Addons' redstone components work
+[redstone]
+
+	#.
+	#.
+	#Changes to how sensitive the Redstone Gyro is to some forces
+	[redstone.gyroscopicCircuit]
+		#.
+		#.
+		#Determines how sensitive the Redstone Gyro is to tilt
+		#Range: 0.0 ~ 3.4028234663852886E38
+		sensitivityToRotation = 0.5
+		#.
+		#Determines how sensitive the Redstone Gyro is to angular velocity
+		#Range: 0.0 ~ 3.4028234663852886E38
+		sensitivityToAngularVelocity = 0.5
+
+#.
+#Length values for extendable shafts and pipes
+[extendables]
+	#.
+	#.
+	#Max stretching length for the Constant Velocity Joint
+	#Range: 0.0 ~ 10.0
+	constantVelocityJointMaxLength = 3.0
+	#.
+	#Max stretching length for the Constant Velocity Joint
+	#Range: 0.0 ~ 10.0
+	hoseMaxLength = 3.0
+

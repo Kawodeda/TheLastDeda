@@ -1,0 +1,38 @@
+{
+    "model": "create_armorer:gun/special_melee_atomic_geo",
+    "texture": "create_armorer:gun/uv/special_melee_atomic",
+    "lod": {
+        "model": "create_armorer:gun/lod/special_melee_atomic_lod",
+        "texture": "create_armorer:gun/lod/special_melee_atomic_lod"
+    },
+    "hud": "create_armorer:gun/hud/special_melee_atomic",
+    "slot": "create_armorer:gun/slot/special_melee_atomic",
+    "animation": "create_armorer:special_melee_atomic",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                1,
+                1,
+                1
+            ],
+            "ground": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+    "sounds": {
+        "inspect": "create_armorer:special_melee_atomic/special_melee_atomic_inspect",
+        "inspect_empty": "create_armorer:special_melee_atomic/special_melee_atomic_inspect",
+        "draw": "create_armorer:special_melee_atomic/special_melee_atomic_draw",
+        "dry_fire": "create_armorer:misc/wrench_dry_fire"
+    }
+}

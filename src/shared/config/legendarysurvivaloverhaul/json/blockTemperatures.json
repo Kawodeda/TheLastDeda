@@ -1,0 +1,290 @@
+{
+  "createlowheated:basic_burner": [
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "lit": "true",
+        "empowered": "false"
+      },
+      "temperature": 6.0
+    },
+    {
+      "properties": {
+        "lit": "true",
+        "empowered": "true"
+      },
+      "temperature": 8.0
+    }
+  ],
+  "create:blaze_burner": [
+    {
+      "properties": {
+        "blaze": "smouldering"
+      },
+      "temperature": 0.0
+    },
+    {
+      "properties": {
+        "blaze": "kindled"
+      },
+      "temperature": 8.0
+    },
+    {
+      "properties": {
+        "blaze": "seething"
+      },
+      "temperature": 12.5
+    }
+  ],
+  "minecraft:soul_wall_torch": [
+    {
+      "properties": {},
+      "temperature": -1.5
+    }
+  ],
+  "legendarysurvivaloverhaul:heater": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 15.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:campfire": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 10.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:soul_torch": [
+    {
+      "properties": {},
+      "temperature": -1.5
+    }
+  ],
+  "minecraft:smoker": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    },
+    {
+      "properties": {
+        "false": "true"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "legendarysurvivaloverhaul:cooler": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": -15.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:furnace": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "legendarysurvivaloverhaul:ice_fern_crop": [
+    {
+      "properties": {
+        "age": "3"
+      },
+      "temperature": -1.5
+    }
+  ],
+  "minecraft:magma_block": [
+    {
+      "properties": {},
+      "temperature": 12.0
+    }
+  ],
+  "minecraft:jack_o_lantern": [
+    {
+      "properties": {},
+      "temperature": 3.0
+    }
+  ],
+  "minecraft:soul_campfire": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": -10.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:torch": [
+    {
+      "properties": {},
+      "temperature": 1.5
+    }
+  ],
+  "minecraft:wall_torch": [
+    {
+      "properties": {},
+      "temperature": 1.5
+    }
+  ],
+  "legendarysurvivaloverhaul:sun_fern_crop": [
+    {
+      "properties": {
+        "age": "3"
+      },
+      "temperature": 1.5
+    }
+  ],
+  "minecraft:fire": [
+    {
+      "properties": {},
+      "temperature": 7.0
+    }
+  ],
+  "minecraft:soul_fire": [
+    {
+      "properties": {},
+      "temperature": -7.0
+    }
+  ],
+  "minecraft:blast_furnace": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 6.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:lava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "minecraft:flowing_lava": [
+    {
+      "properties": {},
+      "temperature": 12.5
+    }
+  ],
+  "createbigcannons:molten_bronze": [
+    {
+      "properties": {},
+      "temperature": 9.5
+    }
+  ],
+  "createbigcannons:flowing_molten_bronze": [
+    {
+      "properties": {},
+      "temperature": 9.5
+    }
+  ],
+  "createbigcannons:molten_steel": [
+    {
+      "properties": {},
+      "temperature": 13.5
+    }
+  ],
+  "createbigcannons:flowing_molten_steel": [
+    {
+      "properties": {},
+      "temperature": 13.5
+    }
+  ],
+  "tfmg:molten_slag": [
+    {
+      "properties": {},
+      "temperature": 11.5
+    }
+  ],
+  "tfmg:flowing_molten_slag": [
+    {
+      "properties": {},
+      "temperature": 11.5
+    }
+  ],
+  "tfmg:molten_steel": [
+    {
+      "properties": {},
+      "temperature": 13.5
+    }
+  ],
+  "tfmg:flowing_molten_steel": [
+    {
+      "properties": {},
+      "temperature": 13.5
+    }
+  ],
+  "createbigcannons:molten_cast_iron": [
+    {
+      "properties": {},
+      "temperature": 13.0
+    }
+  ],
+  "createbigcannons:flowing_molten_cast_iron": [
+    {
+      "properties": {},
+      "temperature": 13.0
+    }
+  ],
+  "createbigcannons:molten_nethersteel": [
+    {
+      "properties": {},
+      "temperature": 17.5
+    }
+  ],
+  "createbigcannons:flowing_molten_nethersteel": [
+    {
+      "properties": {},
+      "temperature": 17.5
+    }
+  ]
+}

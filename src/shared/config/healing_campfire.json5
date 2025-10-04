@@ -1,0 +1,23 @@
+{
+	// How often in ticks the mod checks for campfires around the player. 1 second = 20 ticks, so by default every 2 seconds.
+	// min: 1, max: 1200
+	"checkForCampfireDelayInTicks": 20,
+	// The radius around the campfire in blocks where players receive the regeneration effect.
+	// min: 1, max: 64
+	"healingRadius": 3,
+	// 
+	// min: 0, max: 20
+	"minFoodLevelToRegenerate": 10,
+	// When enabled, the campfire only has an effect when the block is lit up.
+	"campfireMustBeLit": true,
+	// When enabled, the campfire only has an effect when the block is signalling.
+	"campfireMustBeSignalling": false,
+	// When enabled, the mod will work with normal campfires.
+	"enableEffectForNormalCampfires": true,
+	// When enabled, the mod will work with soul campfires.
+	"enableEffectForSoulCampfires": true,
+	// 
+	"playerMustFitMinFoodLevel": true,
+	// 
+	"playerMustNotBeFrostbitten": true
+}

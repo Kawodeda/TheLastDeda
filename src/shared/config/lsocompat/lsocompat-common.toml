@@ -1,0 +1,17 @@
+
+[weather]
+	#Range: -10.0 ~ 10.0
+	"Base Wind Temperature" = -2.0
+	#Range: -10.0 ~ 10.0
+	"Base Rain Temperature" = -2.0
+	#Range: -10.0 ~ 10.0
+	"Base Snow Temperature" = -4.0
+
+[create]
+	#Range: 0.0 ~ 10.0
+	"Boiler Temperature Modifier" = 1.0
+	#Range: 0.0 ~ 256.0
+	"Max Pipe Temperature Pressure" = 32.0
+	#Range: 0.0 ~ 256.0
+	"Min Pipe Temperature Pressure" = 8.0
+

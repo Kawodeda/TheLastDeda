@@ -1,0 +1,83 @@
+
+#main category
+[main]
+	#Global Update-rate
+	#In general how often the individual handlers are ticked. 0 to turn it off. [Default: 80, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	globalspeed = 80
+	#Torch falling handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 19, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	byetorch = 0
+	#Coast decline handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 18, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	coastdecline = 18
+	#Lava Degradation handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 17, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	lavadegration = 17
+	#Farmland Degradation handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 16, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	farmlanddegration = 16
+	#Mushroom handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 23, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	mushrooms = 23
+	#Plants growing on Grass handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 16, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	growplants = 16
+	#Underwater Plant handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 15, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	underwaterplants = 15
+	#Lava Drying handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 17, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	drylava = 17
+	#Mossy Blocks handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 14, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	mossyblocks = 14
+	#Mud Dry handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 7, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	drymud = 7
+	#Mud during Rain Spread handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 64, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	spreadmud = 64
+	#Campfire going out handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 11, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	byecampfire = 1
+	#Anvil on Sand to Sandstone handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 13, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	anvilsand = 13
+	#Spiderweb handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 15, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	spiderwebs = 15
+	#Grasspath decay handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 29, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	byepath = 29
+	#Entity Spawning handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 23, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	entityspawn = 23
+	#Nylium Spread handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 24, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	spreadnylium = 24
+	#Entities leaving handling
+	#The amount of times at a global rate this is ticked. 0 to turn it off. [Default: 100, min: 0, max: 1000]
+	#Range: 0 ~ 1000
+	createpath = 100
+	#Allow Cave Entities
+	#Allow neutral animals to spawn in caves. [Default: false]
+	caveentities = false
+

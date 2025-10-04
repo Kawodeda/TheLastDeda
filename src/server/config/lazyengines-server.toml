@@ -1,0 +1,28 @@
+#Heat level of a passive non-burner source
+#Allowed Values: DISABLED, PASSIVE, ACTIVE
+passive_source_mode = "PASSIVE"
+#Heat level of a passive burner
+#Allowed Values: DISABLED, PASSIVE, ACTIVE
+passive_burner_mode = "PASSIVE"
+#Heat level of a kindled burner
+#Range: > 1
+kindled_burner_heat = 1
+#Heat level of a seething burner
+#Range: > 2
+seething_burner_heat = 2
+#Amount of tanks required to support each level of heat
+#Range: > 1
+tanks_per_heat_level = 4
+#Amount of RPM the engine produces
+#Range: 1 ~ 256
+engine_speed = 64
+#Amount of water per tick the boiler needs
+#Range: > 0
+water_required = 10
+#How many boiler levels a single engine supports
+#Range: 0.0 ~ 1.7976931348623157E308
+engine_power = 1.0
+#Engine efficiency when passive
+#Range: 0.0 ~ 1.0
+passive_efficiency = 0.125
+
