@@ -24,6 +24,13 @@ jobs:
         run: |
           echo Run server save and restart
 
+      - name: Debug SSH connection manually
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh -vvv -i ~/.ssh/id_ed25519 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo connected"
+
       - name: Send commands via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
