@@ -41,7 +41,7 @@ jobs:
             rm -f "$EXIT_FILE"
             
             # Start minecraft session and redirect exit code to file
-            tmux new-session -s "$SESSION" -d "bash -c 'sh /var/server/run.sh; echo \$? > \"$EXIT_FILE\"'"
+            tmux new-session -s "$SESSION" -d "bash -c 'cd /var/server; sh run.sh; echo \$? > \"$EXIT_FILE\"'"
             
             # Wait for potential exit code
             elapsed=0
