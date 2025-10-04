@@ -22,7 +22,41 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            tmux send-keys -t minecraft "/say Restarting..." Enter
-            tmux send-keys -t minecraft "/save-all" Enter
-            sleep 10s
-            tmux send-keys -t minecraft "/stop" Enter
+            SESSION="minecraft"
+
+            tmux send-keys -t "$SESSION" C-u "/stop" Enter
+            
+            echo "Waiting for Minecraft to shut down..."
+            
+            while tmux has-session -t "$SESSION" 2>/dev/null; do
+              sleep 1
+            done
+            
+            echo "Server stopped. Restarting..."
+            
+            EXIT_FILE="/tmp/tmux_exit_code.$$"
+            TIMEOUT=60
+            
+            # Clean up any old file
+            rm -f "$EXIT_FILE"
+            
+            # Start minecraft session and redirect exit code to file
+            tmux new-session -s "$SESSION" -d "bash -c 'sh /var/server/run.sh; echo \$? > \"$EXIT_FILE\"'"
+            
+            # Wait for potential exit code
+            elapsed=0
+            while [ ! -f "$EXIT_FILE" ] && [ $elapsed -lt $TIMEOUT ]; do
+              sleep 1
+              elapsed=$(echo "$elapsed + 1" | bc)
+            done
+            
+            if [ ! -f "$EXIT_FILE" ]; then
+              echo "No exit occured in $elapsed s. Assume successful server start"
+              exit 0
+            fi
+            
+            # If we are here server startup has failed
+            exit_code=$(cat "$EXIT_FILE")
+            echo "Server exited on startup with: $exit_code"
+            
+            exit "$exit_code"
