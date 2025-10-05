@@ -42,11 +42,16 @@ jobs:
       
       - name: Apply update and restart
         uses: appleboy/ssh-action@v1.0.3
+        env:
+            VERSION: ${{ github.run_number }}
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
+          envs: VERSION
           script: |
+            set -e
+            
             SESSION="minecraft"
 
             tmux send-keys -t "$SESSION" C-u "/stop" Enter
@@ -59,17 +64,17 @@ jobs:
             
             echo "Server stopped. Updating..."
 
+            rm -rf ~/artifacts
+            mkdir ~/artifacts
+
+            unzip "~/github/workspace/the-last-deda/dist/server-${VERSION}.zip" -d ~/artifacts
+
             rm -rf /var/server/config
             rm -rf /var/server/emotes
             rm -rf /var/server/kubejs
             rm -rf /var/server/mods
             rm -rf /var/server/resourcepacks
             rm -rf /var/server/tacz
-
-            rm -rf ~/artifacts
-            mkdir ~/artifacts
-
-            unzip "~/github/workspace/the-last-deda/dist/server-${GITHUB_RUN_NUMBER}.zip" -d ~/artifacts
 
             cp -r ~/artifacts/* /var/server
 
