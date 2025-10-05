@@ -1,0 +1,1080 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "tfmg:screw"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "tfmg:screwdriver"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "miners_delight:copper_cup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "miners_delight:copper_pot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createaddition_plus:copper_coil"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createaddition_plus:long_gold_wire"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createaddition_plus:long_electrum_wire"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createaddition_plus:magnet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createaddition_plus:long_copper_wire"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:large_cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:shaft"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:fluid_pipe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:super_glue"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:sand_paper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:red_sand_paper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:golden_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:copper_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:iron_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create:brass_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_ironworks:bronze_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_ironworks:steel_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_ironworks:tin_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_new_age:magnetite_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createbb:sudafed_box"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "createbb:ephedra"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "herbalbrews:copper_tea_kettle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "herbalbrews:tea_kettle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:plaster"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:bandage"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:medikit"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:morphine"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "electrodynamics:sheetplastic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "electrodynamics:ceramicplate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "electrodynamics:circuitbasic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "electrodynamics:ceramicfuse"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "electrodynamics:motor"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_things_and_misc:glue_packaging"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_things_and_misc:neon_tube"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "create_things_and_misc:rose_quartz_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "bakery:small_cooking_pot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "cuisinedelight:cuisine_skillet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "bakery:jar"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "farmersdelight:rope"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "farmersdelight:cooking_pot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "farmersdelight:skillet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "cuisinedelight:plate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "cuisinedelight:spatula"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:clock"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:compass"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "exposure:black_and_white_film"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.9
+              }
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createdeco:iron_coin"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createdeco:brass_coin"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createdeco:copper_coin"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "tfmg:steel_cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "tfmg:aluminum_cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "tfmg:large_steel_cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "tfmg:large_aluminum_cogwheel"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "electrodynamics:geariron"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "electrodynamics:gearbronze"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "electrodynamics:geartin"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "electrodynamics:gearcopper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "electrodynamics:gearsteel"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:cast_component"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:bent_component"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:cut_component"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:bored_component"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:steel_tube"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:brass_fitting"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:steel_cylinder"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "farmersdelight:iron_knife"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create_things_and_misc:zinc_knife"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create_things_and_misc:copper_knife"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create_things_and_misc:brass_knife"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:yellow_cup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:blue_cup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:white_cup"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:yellow_plate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:blue_plate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "handcrafted:white_plate"
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 105
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:snow_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:snow_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:snow_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:snow_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:desert_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:desert_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:desert_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "legendarysurvivaloverhaul:desert_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:taiga_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:taiga_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:taiga_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:taiga_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create_sa:brass_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create_sa:brass_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create_sa:brass_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "create_sa:brass_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:desert_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:desert_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:desert_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "wardrobe:desert_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.6,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:entertainer_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:fletchers_hat_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:fox_hat_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:snow_fox_hat_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:red_scarf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:white_scarf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:magenta_scarf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:black_scarf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:leather_top_hat_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:newsboy_cap_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "wardrobe:farmers_hat_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vinery:straw_hat"
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 5,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:skeleton_skull"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:cobweb",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 15
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

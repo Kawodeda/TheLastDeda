@@ -1,0 +1,599 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create:precision_mechanism"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create_sa:steam_engine"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create_sa:heat_engine"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:steel_mechanism"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create:propeller"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:turbine_blade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create:whisk"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:engine_chamber"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:spark_plug"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "vintageimprovements:redstone_module"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create_things_and_misc:vibration_mechanism"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:fuse"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:capacitor_"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "tfmg:resistor_"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create:electron_tube"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "create_sa:copper_magnet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "exposure:camera"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "exposure:color_film"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:grenade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "tfmg:thermite_grenade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "tfmg:zinc_grenade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "tfmg:pipe_bomb"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:smoke_grenade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "tfmg:copper_grenade"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:explosive_barrel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "crusty_chunks:small_bomb"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:cooling_coat_2"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:thermal_coat_1"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:cooling_coat_1"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:heating_coat_1"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "legendarysurvivaloverhaul:heating_coat_2"
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:ak47_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:glock_17_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:db_short_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:762x39_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:12g_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:9mm_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:m16a1_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:deagle_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:uzi_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:50ae_completed_schematic"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createarmsrace:556x45_completed_schematic"
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunId:\"tacz:glock_17\",GunCurrentAmmoCount:0,HasBulletInBarrel:0,GunFireMode:\"SEMI\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunId:\"tacz:ak47\",GunCurrentAmmoCount:0,HasBulletInBarrel:0,GunFireMode:\"AUTO\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunId:\"tacz:db_short\",GunCurrentAmmoCount:0,HasBulletInBarrel:0,GunFireMode:\"BURST\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunId:\"tacz:m1911\",GunCurrentAmmoCount:0,HasBulletInBarrel:0,GunFireMode:\"SEMI\"}"
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz:12g\"}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 13
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz:762x39\"}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 14,
+                "max": 31
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz:45acp\"}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz:9mm\"}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 16
+              }
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:sight_t1\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:sight_t2\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:sight_sro_dot\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:stock_tactical_ar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:stock_militech_b5\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:stock_carbon_bone_c5\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:muzzle_silencer_ptilopsis\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:bayonet_6h3\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:grip_vertical_military\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:attachment",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttachmentId:\"tacz:grip_vertical_talon\"}"
+            }
+          ]
+        },
+
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 35,
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:gold_block",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:diamond_leggings",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 15
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:chests/woodland_mansion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:chests/simple_dungeon"
+        }
+      ]
+    },
+
+    {
+      "rolls": 1,
+      "entries": [
+        
+      ]
+    }
+  ]
+}
+
+
