@@ -54,7 +54,7 @@ jobs:
             
             SESSION="minecraft"
 
-            tmux send-keys -t "$SESSION" C-u "/stop" Enter 2>/dev/null
+            tmux send-keys -t "$SESSION" C-u "/stop" Enter || true
             
             echo "Waiting for Minecraft to shut down..."
             
