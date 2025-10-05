@@ -21,7 +21,8 @@ jobs:
       - name: Build server pack 
         run: |
           ls -l $GITHUB_WORKSPACE
-          cd Join-Path $GITHUB_WORKSPACE "the-last-deda"
+          Write-Host $GITHUB_WORKSPACE
+          Set-Location (Join-Path $GITHUB_WORKSPACE "the-last-deda")
           & "./build-server.ps1" -Version $github.run_number
         shell: pwsh
 
