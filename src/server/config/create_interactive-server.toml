@@ -3,25 +3,25 @@
 #Range: > -2147483648
 1readForInfo = 123
 #.
-#How trains are handled for interactivity
-#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
-trainHandling = "WITH_STICKER"
-#.
-#How translating contraptions are handled for interactivity (Piston, Gantry, Pulley)
-#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
-translatingHandling = "WITH_STICKER"
-#.
-#How bearing contraptions are handled for interactivity
-#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
-bearingHandling = "WITH_STICKER"
-#.
 #How clockwork contraptions are handled for interactivity (Flaps, etc)
 #Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
 clockworkHandling = "WITH_STICKER"
 #.
+#How trains are handled for interactivity
+#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
+trainHandling = "ALWAYS"
+#.
+#How translating contraptions are handled for interactivity (Piston, Gantry, Pulley)
+#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
+translatingHandling = "ALWAYS"
+#.
+#How bearing contraptions are handled for interactivity
+#Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
+bearingHandling = "ALWAYS"
+#.
 #How mounted contraptions are handled for interactivity (minecart)
 #Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER
-mountedHandling = "WITH_STICKER"
+mountedHandling = "ALWAYS"
 #.
 #How any other contraptions are handled for interactivity (create addons, etc)
 #Allowed Values: ALWAYS, WITHOUT_STICKER, WITH_STICKER, NEVER

@@ -40,12 +40,10 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'electrodynamics:combatarmorleggings' });
   event.remove({ output: 'electrodynamics:coalgenerator' });
   event.remove({ output: 'electrodynamics:solarpanelplate' });
-  event.remove({ output: '' });
-  event.remove({ output: '' });
 
 
   console.log('Begin modifying recipes');
-
+    
   // Warium
 
   // Replace warium:plutonium_core with nuclearscience:fuelplutonium in fission_core
@@ -316,6 +314,8 @@ ServerEvents.recipes(event => {
   	'minecraft:iron_ingot',
   	'tfmg:steel_mechanism'
   );
+    
+    event.remove({ output: 'createarmsrace:research_table' });
 
   // Minecolonies
 

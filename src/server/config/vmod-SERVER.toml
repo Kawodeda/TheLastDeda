@@ -5,7 +5,7 @@
 	#No comment
 	SCALE_THRUSTERS_THRUST = true
 	#DO NOT CHANGE
-	DIMENSION_GRAVITY_VALUES = ""
+	DIMENSION_GRAVITY_VALUES = "minecraft:dimension:minecraft:overworld 0.0 -10.0 0.0"
 	#The amount of ticks VMod will try to create constraint if it failed to create one. Why is it needed? VS lags sometimes and fails to create constraints, idk why.
 	#Range: > 20
 	CONSTRAINT_CREATION_ATTEMPTS = 12000

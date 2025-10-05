@@ -2,7 +2,7 @@
 [gun]
 	#The default fire sound range (block)
 	#Range: > 0
-	DefaultGunFireSoundDistance = 64
+	DefaultGunFireSoundDistance = 150
 	#The range (block) of other gun sound, reloading sound etc.
 	#Range: > 0
 	DefaultGunOtherSoundDistance = 16
@@ -22,7 +22,7 @@
 	#Range: > 0
 	ExplosiveAmmoVisibleDistance = 192
 	#Those blocks that the ammo can pass through
-	PassThroughBlocks = ["minecraft:glass", "minecraft:ice"]
+	PassThroughBlocks = ["minecraft:glass"]
 	#Whether a ammo can break the glass
 	DestroyGlass = true
 	#Whether a ammo can ignite the block

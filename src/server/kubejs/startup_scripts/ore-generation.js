@@ -31,6 +31,7 @@ WorldgenEvents.remove(event => {
 	    	'crusty_chunks:uranium_ore',
 	    	'crusty_chunks:sulfur_ore',
 	    	'crusty_chunks:bauxite',
+            'tfmg:bauxite',
 	    ];
   })
 
@@ -40,11 +41,4 @@ WorldgenEvents.remove(event => {
   	'create_tank_defenses:titanium_deepslate_ore',
   	'create_tank_defenses:titanium_ore',
   ]);
-});
-
-StartupEvents.registry('block', event => {
-  console.info('Block registry');
-  for (var key in event) {
-  	console.info(key);
-  }
 });

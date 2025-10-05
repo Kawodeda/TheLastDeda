@@ -6,9 +6,9 @@
 	#Can players revive themselves with a (non-player) kill?
 	hunter = false
 	#Are Incapacitated players slowed down dramatically?
-	slow = true
+	slow = false
 	#Are Incapacitated players weakened dramatically?
-	weakened = true
+	weakened = false
 	#Does being restful award players with another down?
 	regenerating = false
 	#Does the player have unlimited downs?
@@ -23,7 +23,7 @@
 	#A list of comma separated item IDs for foods player can eat to revive themselves. IE: minecraft:enchanted_golden_apple,minecraft:apple
 	foodReviveList = "minecraft:enchanted_golden_apple"
 	#A list of comma separated item IDs for foods player can eat to reset their down counters. IE: minecraft:golden_apple,minecraft:golden_carrot
-	foodHealList = "minecraft:golden_apple,legendarysurvivaloverhaul:medkit"
+	foodHealList = "minecraft:golden_apple"
 	#How many ticks a player can be downed without dying.
 	#Range: > 20
 	downTicks = 2000

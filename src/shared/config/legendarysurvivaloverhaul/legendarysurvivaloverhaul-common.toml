@@ -71,12 +71,12 @@
 		"Temperature Immunity On Death Enabled" = true
 		# Temperature immunity period in ticks while the player is immune to temperature effects after death.
 		#Range: 0 ~ 100000
-		"Temperature Immunity On Death Time" = 1800
+		"Temperature Immunity On Death Time" = 6000
 		# If enabled, players will be immune to temperature effects on first spawn in a world.
 		"Temperature Immunity On First Spawn Enabled" = true
 		# Temperature immunity period in ticks while the player is immune to temperature effects on first spawn.
 		#Range: 0 ~ 100000
-		"Temperature Immunity On First Spawn Time" = 1800
+		"Temperature Immunity On First Spawn Time" = 12000
 
 	[temperature.secondary_effects]
 		# If enabled, players will also receive other effects from their current temperature state.
@@ -155,11 +155,11 @@
 		# How much of an effect rain has on temperature.
 		# It means that for a value of -2, the body temperature of the player is reduced by 2.
 		#Range: -1000.0 ~ 1000.0
-		"Rain Temperature Modifier" = -2.0
+		"Rain Temperature Modifier" = 0.0
 		# How much of an effect snow has on temperature.
 		# It means that for a value of -6, the body temperature of the player is reduced by 6.
 		#Range: -1000.0 ~ 1000.0
-		"Snow Temperature Modifier" = -6.0
+		"Snow Temperature Modifier" = 0.0
 
 	# Freeze effect increases while inside snow powder.
 	[temperature.freeze]
@@ -267,7 +267,7 @@
 			"Season Cards Enabled" = false
 			# If default season is enabled, when serene season defines no season effect in a biome, the normal season temperature will be applied.
 			# If disabled, when serene season defines no season effects, no season temperature will be applied.
-			"Default Season Enabled" = true
+			"Default Season Enabled" = false
 
 			# Temperature modifiers per season in temperate biomes. The value is reached at the middle of the sub season, and smoothly transition from one to another.
 			[temperature.integration.seasons.temperate]
