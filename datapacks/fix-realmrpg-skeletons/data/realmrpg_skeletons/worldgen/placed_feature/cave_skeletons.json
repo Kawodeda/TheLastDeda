@@ -1,0 +1,37 @@
+{
+  "feature": "realmrpg_skeletons:cave_skeletons",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": 6,
+          "max_inclusive": 10
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 2
+        },
+        "max_inclusive": {
+          "absolute": 55
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

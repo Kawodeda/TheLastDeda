@@ -1,0 +1,54 @@
+{
+  "feature": "realmrpg_skeletons:underground_chambers",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 33
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 5
+        },
+        "max_inclusive": {
+          "absolute": 60
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "#realmrpg_skeletons:underground_chamber_can_generate_on",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_blocks",
+          "blocks": "#realmrpg_skeletons:skeletons_cannot_generate_on",
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

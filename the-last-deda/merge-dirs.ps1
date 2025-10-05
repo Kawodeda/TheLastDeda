@@ -6,12 +6,6 @@ param (
     [string[]]$Sources
 )
 
-if (Test-Path -Path $ResultDir) {
-    Remove-Item -Path $ResultDir -Recurse -Force    
-}
-
-New-Item -ItemType Directory -Path $ResultDir | Out-Null
-
 foreach ($src in $Sources) {
     $srcAbsolute = (Resolve-Path -Path $src).Path
     Get-ChildItem -Path $srcAbsolute -Recurse -File | ForEach-Object {
