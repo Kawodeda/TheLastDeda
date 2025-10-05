@@ -20,13 +20,11 @@ jobs:
       
       - name: Build server pack 
         run: |
-          ls -l $env:GITHUB_WORKSPACE
-          Write-Host $env:GITHUB_WORKSPACE
           Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
           & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
         shell: pwsh
 
-      - name: Upload artifacts
+      - name: Save artifacts
         uses: actions/upload-artifact@v4
         with:
           name: server-${{ github.run_number }}
@@ -39,7 +37,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "$GITHUB_WORKSPACE/the-last-deda/dist/*"
+          source: ${{ github.workspace }}/the-last-deda/dist/*
           target: "~/artifacts"
       
       
