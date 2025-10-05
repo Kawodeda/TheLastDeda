@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.kawodeda.modname.mixin",
+  "plugin": "com.kawodeda.modname.MixinConfig",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "modname.mixins.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

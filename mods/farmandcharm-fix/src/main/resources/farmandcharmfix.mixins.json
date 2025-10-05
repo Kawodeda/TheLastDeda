@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.kawodeda.farmandcharmfix.mixin",
+  "plugin": "com.kawodeda.farmandcharmfix.MixinConfig",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "farmandcharmfix.mixins.refmap.json",
+  "mixins": [
+    "FarmersBlessingEffectMixin",
+    "GrandmasBlessingEffectMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

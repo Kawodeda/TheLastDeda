@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.kawodeda.lsocompat.mixin",
+  "plugin": "com.kawodeda.lsocompat.MixinConfig",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "lsocompat.mixins.refmap.json",
+  "mixins": [
+    "BlockModifierMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
