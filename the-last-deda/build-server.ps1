@@ -1,3 +1,8 @@
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$Version
+)
+
 function Make-TempDir {
     [OutputType([string])]
 
@@ -35,7 +40,7 @@ if (Test-Path -Path $ResultDir) {
 
 New-Item -ItemType Directory -Path $ResultDir | Out-Null
 
-Compress-Archive -Path (Join-Path $TempResultDir "\*") -DestinationPath (Join-Path $ResultDir "server")
+Compress-Archive -Path (Join-Path $TempResultDir "\*") -DestinationPath (Join-Path $ResultDir "server-$Version")
 
 Write-Host "Wrote server pack archive."
 
