@@ -9,7 +9,7 @@ on:
 jobs:
     
   # This workflow contains a single job called "build"
-  update:
+  build_and_update:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -32,5 +32,16 @@ jobs:
           name: server-${{ github.run_number }}
           path: ${{ github.workspace }}/the-last-deda/dist/server-${{ github.run_number }}.zip
           compression-level: 0
+
+      - name: Upload
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "$GITHUB_WORKSPACE/the-last-deda/dist/*"
+          target: "~/artifacts"
+      
+      
         
       
