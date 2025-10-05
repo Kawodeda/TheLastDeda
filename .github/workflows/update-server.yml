@@ -38,8 +38,66 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: ${{ github.workspace }}/the-last-deda/dist/*
-          target: "~/artifacts"
+          target: "~"
       
-      
-        
-      
+      - name: Apply update and restart
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            SESSION="minecraft"
+
+            tmux send-keys -t "$SESSION" C-u "/stop" Enter
+            
+            echo "Waiting for Minecraft to shut down..."
+            
+            while tmux has-session -t "$SESSION" 2>/dev/null; do
+              sleep 1
+            done
+            
+            echo "Server stopped. Updating..."
+
+            rm -rf /var/server/config
+            rm -rf /var/server/emotes
+            rm -rf /var/server/kubejs
+            rm -rf /var/server/mods
+            rm -rf /var/server/resourcepacks
+            rm -rf /var/server/tacz
+
+            rm -rf ~/artifacts
+            mkdir ~/artifacts
+
+            unzip "~/github/workspace/the-last-deda/dist/server-${GITHUB_RUN_NUMBER}.zip" -d ~/artifacts
+
+            cp -r ~/artifacts/* /var/server
+
+            echo "Start server..."
+            
+            EXIT_FILE="/tmp/tmux_exit_code.$$"
+            TIMEOUT=60
+            
+            # Clean up any old file
+            rm -f "$EXIT_FILE"
+            
+            # Start minecraft session and redirect exit code to file
+            tmux new-session -s "$SESSION" -d "bash -c 'cd /var/server; sh run.sh; echo \$? > \"$EXIT_FILE\"'"
+            
+            # Wait for potential exit code
+            elapsed=0
+            while [ ! -f "$EXIT_FILE" ] && [ $elapsed -lt $TIMEOUT ]; do
+              sleep 1
+              elapsed=$(echo "$elapsed + 1" | bc)
+            done
+            
+            if [ ! -f "$EXIT_FILE" ]; then
+              echo "No exit occured in $elapsed s. Assume successful server start"
+              exit 0
+            fi
+            
+            # If we are here server startup has failed
+            exit_code=$(cat "$EXIT_FILE")
+            echo "Server exited on startup with: $exit_code"
+            
+            exit "$exit_code"
