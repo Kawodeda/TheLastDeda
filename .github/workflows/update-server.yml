@@ -67,7 +67,7 @@ jobs:
             rm -rf ~/artifacts
             mkdir ~/artifacts
 
-            unzip "~/github/workspace/the-last-deda/dist/server-${VERSION}.zip" -d ~/artifacts
+            unzip "/home/ci-agent/github/workspace/the-last-deda/dist/server-${VERSION}.zip" -d "/home/ci-agent/artifacts"
 
             rm -rf /var/server/config
             rm -rf /var/server/emotes
@@ -76,7 +76,7 @@ jobs:
             rm -rf /var/server/resourcepacks
             rm -rf /var/server/tacz
 
-            cp -r ~/artifacts/* /var/server
+            cp -r /home/ci-agent/artifacts/* /var/server
 
             echo "Start server..."
             
