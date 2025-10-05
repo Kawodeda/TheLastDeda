@@ -1,0 +1,72 @@
+name: UpdateServer
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+    
+  # This workflow contains a single job called "build"
+  update:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      - name: Checkout
+      - uses: actions/checkout@v4
+      
+      - name: Build server pack 
+        run: |
+          cd "$GITHUB_WORKSPACE/the-last-deda"
+          & "./build-server.ps1"
+        shell: pwsh
+        
+      - name: Send restart commands
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            SESSION="minecraft"
+
+            tmux send-keys -t "$SESSION" C-u "/stop" Enter
+            
+            echo "Waiting for Minecraft to shut down..."
+            
+            while tmux has-session -t "$SESSION" 2>/dev/null; do
+              sleep 1
+            done
+            
+            echo "Server stopped. Restarting..."
+            
+            EXIT_FILE="/tmp/tmux_exit_code.$$"
+            TIMEOUT=60
+            
+            # Clean up any old file
+            rm -f "$EXIT_FILE"
+            
+            # Start minecraft session and redirect exit code to file
+            tmux new-session -s "$SESSION" -d "bash -c 'cd /var/server; sh run.sh; echo \$? > \"$EXIT_FILE\"'"
+            
+            # Wait for potential exit code
+            elapsed=0
+            while [ ! -f "$EXIT_FILE" ] && [ $elapsed -lt $TIMEOUT ]; do
+              sleep 1
+              elapsed=$(echo "$elapsed + 1" | bc)
+            done
+            
+            if [ ! -f "$EXIT_FILE" ]; then
+              echo "No exit occured in $elapsed s. Assume successful server start"
+              exit 0
+            fi
+            
+            # If we are here server startup has failed
+            exit_code=$(cat "$EXIT_FILE")
+            echo "Server exited on startup with: $exit_code"
+            
+            exit "$exit_code"
