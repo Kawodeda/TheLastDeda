@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: server-${{ github.run_number }}
-          path: ${{ GITHUB_WORKSPACE }}/the-last-deda/dist/server-${{ github.run_number }}.zip
+          path: ${{ github.workspace }}/the-last-deda/dist/server-${{ github.run_number }}.zip
           compression-level: 0
         
       
