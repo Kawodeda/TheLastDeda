@@ -20,10 +20,10 @@ jobs:
       
       - name: Build server pack 
         run: |
-          ls -l $GITHUB_WORKSPACE
-          Write-Host $GITHUB_WORKSPACE
-          Set-Location (Join-Path $GITHUB_WORKSPACE "the-last-deda")
-          & "./build-server.ps1" -Version $github.run_number
+          ls -l $env:GITHUB_WORKSPACE
+          Write-Host $env:GITHUB_WORKSPACE
+          Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
+          & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
         shell: pwsh
 
       - name: Upload artifacts
