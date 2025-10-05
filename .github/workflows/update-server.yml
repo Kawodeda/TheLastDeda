@@ -77,6 +77,7 @@ jobs:
             rm -rf /var/server/tacz
 
             cp -r /home/ci-agent/artifacts/* /var/server
+            echo "$VERSION" > /var/server/version.txt
 
             echo "Start server..."
             
