@@ -20,6 +20,8 @@ jobs:
       
       - name: Build server pack 
         run: |
+          Install-Module PSToml -Scope CurrentUser -Force
+          
           Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
           & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
         shell: pwsh
