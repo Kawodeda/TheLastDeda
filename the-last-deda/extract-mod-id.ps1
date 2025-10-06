@@ -74,5 +74,5 @@ foreach ($src in $sourceFiles) {
 }
 
 if (-not ($result.Count -eq 0)) {
-    ($result -join ",`n") + "," | Out-File -FilePath $ResultPath -Append:$AppendResult
+    ($result -join ",`n") + "," | Out-File -FilePath $ResultPath -Append:$AppendResult -Encoding UTF8
 }
