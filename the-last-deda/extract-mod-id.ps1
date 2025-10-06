@@ -43,7 +43,8 @@ foreach ($src in $sourceFiles) {
             $stream.Close()
 
             $jsonObject = $content | ConvertFrom-Json
-            $modId = $jsonObject.id
+
+            $modIds = @($jsonObject.id)
 
             break
         }
@@ -58,7 +59,7 @@ foreach ($src in $sourceFiles) {
 
             $tomlObject = ConvertFrom-Toml -InputObject $content
 
-            $modId = $tomlObject.mods.modId
+            $modIds = $tomlObject.mods | ForEach-Object { $_.modId }
 
             break
         }
@@ -66,9 +67,9 @@ foreach ($src in $sourceFiles) {
 
     $zip.Dispose()
 
-    Write-Host """$modId"""
+    $modIds | ForEach-Object { Write-Host """$_""" }
     if (-not ([string]::IsNullOrEmpty($ResultPath))) {
-        $result.Add("""$modId""") | Out-Null
+        $modIds | ForEach-Object { $result.Add("""$_""") | Out-Null }
     }
 }
 
