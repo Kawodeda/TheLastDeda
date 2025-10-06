@@ -1,9 +1,10 @@
 $outPath = "./whitelist.txt"
 
-Copy-Item -Path "./fabric-api-deps.txt" -Destination $outPath
+Copy-Item -Path "./dynamic-mods-list.txt" -Destination $outPath
 
 ./extract-mod-id.ps1 -BaseLocation ".\src\client\mods" -ResultPath $outPath -AppendResult
 ./extract-mod-id.ps1 -BaseLocation ".\src\shared\mods" -ResultPath $outPath -AppendResult
+./extract-mod-id.ps1 -BaseLocation ".\src\server\mods" -ResultPath $outPath -AppendResult
 
 $whitelistContent = Get-Content -Path $outPath -Raw
 $whitelistItems = $whitelistContent.Trim().Trim(',') -split "," | ForEach-Object { $_.Trim().Trim('\"') }
