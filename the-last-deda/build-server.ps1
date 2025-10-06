@@ -3,19 +3,28 @@ param (
     [string]$Version
 )
 
-function Make-TempDir {
-    [OutputType([string])]
-
-    $tempPath = [System.IO.Path]::GetTempPath()
-    $folderName = (New-Guid).ToString("N")
-    $newTempFolder = Join-Path -Path $tempPath -ChildPath $folderName
-
-    New-Item -ItemType Directory -Path $newTempFolder | Out-Null
-
-    return $newTempFolder.Trim()
-}
+. "./utils.ps1"
 
 Write-Host "Start server-pack build..."
+
+
+Write-Host "Generate mod whitelist..."
+
+& "./generate-mod-whitelist.ps1"
+
+$whitelistContent = Get-Content -Path "./whitelist.txt" -Raw
+$whitelistItems = $whitelistContent.Trim().Trim(',') -split "," | ForEach-Object { $_.Trim().Trim('\"') }
+
+$configPath = "./src/server/config/mod_whitelist-config.json"
+$configContent = Get-Content -Path $configPath -Raw
+$jsonObject = $configContent | ConvertFrom-Json
+
+$jsonObject.CLIENT_MOD_WHITELIST = $whitelistItems
+
+$jsonObject | ConvertTo-Json -Depth 3 | Out-File $configPath -Encoding UTF8
+
+
+Write-Host "Merge souce files for server..."
 
 $ResultDir = "./dist"
 $Sources = @("./src/shared", "./src/server")
@@ -24,15 +33,17 @@ $TempDatapacksDir = Make-TempDir
 
 & "./merge-dirs.ps1" -ResultDir "$TempResultDir" -Sources $Sources
 
-Write-Host "Merged souce files for server."
+
+Write-Host "Pack datapacks..."
 
 & "./pack-datapacks.ps1" -ResultDir $TempDatapacksDir -SourcesDir "../datapacks"
 
+Write-Host "Copy datapacks..."
+
 & "./merge-dirs.ps1" -ResultDir (Join-Path $TempResultDir "resourcepacks") -Sources @($TempDatapacksDir)
 
-Write-Host "Copied datapacks."
 
-Write-Host "Writing artifacts..."
+Write-Host "Write artifacts..."
 
 if (Test-Path -Path $ResultDir) {
     Remove-Item -Path $ResultDir -Recurse -Force    
@@ -44,6 +55,7 @@ Compress-Archive -Path (Join-Path $TempResultDir "\*") -DestinationPath (Join-Pa
 
 Write-Host "Wrote server pack archive."
 
+
 Write-Host "Cleaning up..."
 
 if (Test-Path -Path $TempResultDir) {
@@ -52,5 +64,6 @@ if (Test-Path -Path $TempResultDir) {
 if (Test-Path -Path $TempDatapacksDir) {
     Remove-Item -Path $TempDatapacksDir -Recurse -Force    
 }
+
 
 Write-Host "Done."
