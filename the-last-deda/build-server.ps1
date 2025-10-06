@@ -12,17 +12,6 @@ Write-Host "Generate mod whitelist..."
 
 & "./generate-mod-whitelist.ps1"
 
-$whitelistContent = Get-Content -Path "./whitelist.txt" -Raw
-$whitelistItems = $whitelistContent.Trim().Trim(',') -split "," | ForEach-Object { $_.Trim().Trim('\"') }
-
-$configPath = "./src/server/config/mod_whitelist-config.json"
-$configContent = Get-Content -Path $configPath -Raw
-$jsonObject = $configContent | ConvertFrom-Json
-
-$jsonObject.CLIENT_MOD_WHITELIST = $whitelistItems
-
-$jsonObject | ConvertTo-Json -Depth 3 | Out-File $configPath -Encoding UTF8
-
 
 Write-Host "Merge souce files for server..."
 
