@@ -79,6 +79,8 @@ jobs:
             cp -r /home/ci-agent/artifacts/* /var/server
             echo "$VERSION" > /var/server/version.txt
 
+            rm -rf /home/ci-agent/github/workspace/the-last-deda
+
             echo "Start server..."
             
             EXIT_FILE="/tmp/tmux_exit_code.$$"
