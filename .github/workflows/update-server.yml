@@ -85,30 +85,22 @@ jobs:
             rm -rf /home/ci-agent/github/workspace/the-last-deda
 
             echo "Start server..."
-            
-            EXIT_FILE="/tmp/tmux_exit_code.$$"
-            TIMEOUT=60
-            
-            # Clean up any old file
-            rm -f "$EXIT_FILE"
-            
-            # Start minecraft session and redirect exit code to file
-            tmux new-session -s "$SESSION" -d "bash -c 'cd /var/server; sh run.sh; echo \$? > \"$EXIT_FILE\"'"
-            
-            # Wait for potential exit code
+
+            TIMEOUT=90
+
+            # Start minecraft session
+            tmux new-session -s "$SESSION" -d "bash -c 'cd /var/server; sh run.sh'"
+
+            # Wait for potential session termination
             elapsed=0
-            while [ ! -f "$EXIT_FILE" ] && [ $elapsed -lt $TIMEOUT ]; do
+            while [ $elapsed -lt $TIMEOUT ]; do
+              if ! tmux has-session -t "$SESSION" 2>/dev/null; then
+                echo "Server startup has failed"
+                exit 1
+              fi
+
               sleep 1
               elapsed=$(echo "$elapsed + 1" | bc)
             done
-            
-            if [ ! -f "$EXIT_FILE" ]; then
-              echo "No exit occured in $elapsed s. Assume successful server start"
-              exit 0
-            fi
-            
-            # If we are here server startup has failed
-            exit_code=$(cat "$EXIT_FILE")
-            echo "Server exited on startup with: $exit_code"
-            
-            exit "$exit_code"
+
+            echo "No exit occured in $elapsed s. Assume successful server start"
