@@ -30,46 +30,53 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $result = [System.Collections.ArrayList]::new()
 foreach ($src in $sourceFiles) {
-    $srcAbsolute = (Resolve-Path -Path $src).Path
-    $zip = [System.IO.Compression.ZipFile]::OpenRead($srcAbsolute)
+    try {
+        $srcAbsolute = (Resolve-Path -Path $src).Path
+        $zip = [System.IO.Compression.ZipFile]::OpenRead($srcAbsolute)
 
-    foreach ($entry in $zip.Entries) {
-        $fabricPath = "fabric.mod.json"
-        if ($entry.FullName -eq $fabricPath) {
-            $stream = $entry.Open()
-            $reader = New-Object System.IO.StreamReader($stream)
-            $content = $reader.ReadToEnd()
-            $reader.Close()
-            $stream.Close()
+        foreach ($entry in $zip.Entries) {
+            $fabricPath = "fabric.mod.json"
+            if ($entry.FullName -eq $fabricPath) {
+                $stream = $entry.Open()
+                $reader = New-Object System.IO.StreamReader($stream)
+                $content = $reader.ReadToEnd()
+                $reader.Close()
+                $stream.Close()
 
-            $jsonObject = $content | ConvertFrom-Json
+                $jsonObject = $content | ConvertFrom-Json
 
-            $modIds = @($jsonObject.id)
+                $modIds = @($jsonObject.id)
 
-            break
+                break
+            }
+
+            $forgePath = "META-INF/mods.toml"
+            if ($entry.FullName -eq $forgePath) {
+                $stream = $entry.Open()
+                $reader = New-Object System.IO.StreamReader($stream)
+                $content = $reader.ReadToEnd()
+                $reader.Close()
+                $stream.Close()
+
+                $tomlObject = ConvertFrom-Toml -InputObject $content
+
+                $modIds = $tomlObject.mods | ForEach-Object { $_.modId }
+
+                break
+            }
         }
 
-        $forgePath = "META-INF/mods.toml"
-        if ($entry.FullName -eq $forgePath) {
-            $stream = $entry.Open()
-            $reader = New-Object System.IO.StreamReader($stream)
-            $content = $reader.ReadToEnd()
-            $reader.Close()
-            $stream.Close()
+        $zip.Dispose()
 
-            $tomlObject = ConvertFrom-Toml -InputObject $content
-
-            $modIds = $tomlObject.mods | ForEach-Object { $_.modId }
-
-            break
+        $modIds | ForEach-Object { Write-Host """$_""" }
+        if (-not ([string]::IsNullOrEmpty($ResultPath))) {
+            $modIds | ForEach-Object { $result.Add("""$_""") | Out-Null }
         }
     }
-
-    $zip.Dispose()
-
-    $modIds | ForEach-Object { Write-Host """$_""" }
-    if (-not ([string]::IsNullOrEmpty($ResultPath))) {
-        $modIds | ForEach-Object { $result.Add("""$_""") | Out-Null }
+    catch {
+        Write-Host "Failed to process file $src. Exception Message: $($_.Exception.Message)"
+        Write-Host "Stack Trace: $($_.Exception.StackTrace)"
+        exit 1
     }
 }
 
