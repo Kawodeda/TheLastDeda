@@ -19,18 +19,11 @@ jobs:
       
       - name: Build server pack 
         run: |
-          try {
-              Install-Module PSToml -Scope CurrentUser -Force
-              Import-Module PSToml
-              
-              Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
-              & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
-          }
-          catch {
-              Write-Host "Exception Message: $($_.Exception.Message)"
-              Write-Host "Stack Trace: $($_.Exception.StackTrace)"
-              exit 1
-          }
+          Install-Module PSToml -Scope CurrentUser -Force
+          Import-Module PSToml
+          
+          Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
+          & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
         shell: pwsh
 
       - name: Save artifacts
