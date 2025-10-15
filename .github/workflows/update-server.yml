@@ -12,7 +12,6 @@ jobs:
   build_and_update:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
@@ -20,11 +19,18 @@ jobs:
       
       - name: Build server pack 
         run: |
-          Install-Module PSToml -Scope CurrentUser -Force
-          Import-Module PSToml
-          
-          Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
-          & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
+          try {
+              Install-Module PSToml -Scope CurrentUser -Force
+              Import-Module PSToml
+              
+              Set-Location (Join-Path $env:GITHUB_WORKSPACE "the-last-deda")
+              & "./build-server.ps1" -Version $env:GITHUB_RUN_NUMBER
+          }
+          catch {
+              Write-Host "Exception Message: $($_.Exception.Message)"
+              Write-Host "Stack Trace: $($_.Exception.StackTrace)"
+              exit 1
+          }
         shell: pwsh
 
       - name: Save artifacts
